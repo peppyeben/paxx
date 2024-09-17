@@ -5,7 +5,21 @@
             'fixed top-0 left-0 w-64 pt-20 px-3 h-full bg-[#543ec5] text-white transition-transform duration-300 ease-in-out z-40',
         ]"
     >
-        <div class="flex relative h-screen"></div>
+        <div class="flex relative h-full">
+            <section
+                class="flex justify-center items-center flex-col space-y-3"
+            >
+                <p class="font-bold text-white">Home</p>
+                <p class="font-bold text-white">Transactions</p>
+                <p class="font-bold text-[#d36332]">Earnings</p>
+            </section>
+            <section class="mt-auto absolute bottom-0 py-6 px-3">
+                <p class="rounded-lg flex border border-white space-x-3 p-2">
+                    <span>ic</span>
+                    <span>Paxx.solbrain</span>
+                </p>
+            </section>
+        </div>
     </div>
 </template>
 
