@@ -7,11 +7,11 @@
     >
         <div class="flex relative h-full">
             <section
-                class="flex justify-start items-start text-left flex-col space-y-3 py-6"
+                class="flex justify-start items-start text-left flex-col space-y-3 py-6 px-3"
             >
-                <p class="font-bold text-white">Home</p>
-                <p class="font-bold text-white">Transactions</p>
-                <p class="font-bold text-[#d36332]">Earnings</p>
+                <p class="font-bold text-lg text-white">Home</p>
+                <p class="font-bold text-lg text-white">Transactions</p>
+                <p class="font-bold text-lg text-[#d36332]">Earnings</p>
             </section>
             <section class="mt-auto absolute bottom-0 py-6 px-3">
                 <p class="rounded-lg flex border border-white space-x-3 p-2">
