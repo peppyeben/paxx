@@ -7,7 +7,7 @@
     >
         <div class="flex relative h-full">
             <section
-                class="flex justify-center items-center flex-col space-y-3"
+                class="flex justify-start items-center flex-col space-y-3 py-6"
             >
                 <p class="font-bold text-white">Home</p>
                 <p class="font-bold text-white">Transactions</p>
