@@ -2,7 +2,7 @@
     <div class="flex pt-16">
         <button
             @click="toggleSidebar"
-            class="bg-blue-500 text-white fixed top-4 left-4 z-50 rounded-full w-14 h-14"
+            class="bg-[#543ec5] shadow-1 shadow-[#ab9aff] text-white fixed top-4 left-4 z-50 rounded-full w-14 h-14"
         >
             =
         </button>
@@ -23,7 +23,7 @@ export default {
         MainSection,
     },
     setup() {
-        const isOpen = ref(false);
+        const isOpen = ref(true);
 
         const toggleSidebar = () => {
             isOpen.value = !isOpen.value;
