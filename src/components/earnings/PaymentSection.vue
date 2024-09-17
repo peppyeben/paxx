@@ -42,8 +42,15 @@
                                         Txd53...
                                     </td>
                                     <td class="whitespace-nowrap px-6 py-4">
-                                        <p class="flex space-x-2">
-                                            <span>ic</span>
+                                        <p
+                                            class="flex space-x-2 justify-start items-center"
+                                        >
+                                            <span
+                                                ><img
+                                                    src="assets/phantom.svg"
+                                                    alt="earnings"
+                                                    class="w-6"
+                                            /></span>
                                             <span
                                                 class="font-bold text-gray-900"
                                                 >Phantom</span
@@ -75,7 +82,11 @@
                                     </td>
                                     <td class="whitespace-nowrap px-6 py-4">
                                         <p class="flex space-x-2">
-                                            <span>ic</span>
+                                            <img
+                                                src="assets/glow.svg"
+                                                alt="earnings"
+                                                class="w-6"
+                                            />
                                             <span
                                                 class="font-bold text-gray-900"
                                                 >Glow</span
@@ -107,7 +118,11 @@
                                     </td>
                                     <td class="whitespace-nowrap px-6 py-4">
                                         <p class="flex space-x-2">
-                                            <span>ic</span>
+                                            <img
+                                                src="assets/ledger.svg"
+                                                alt="earnings"
+                                                class="w-6"
+                                            />
                                             <span
                                                 class="font-bold text-gray-900"
                                                 >Ledger</span
