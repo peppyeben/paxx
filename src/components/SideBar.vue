@@ -17,9 +17,49 @@
             <section
                 class="flex justify-start items-start text-left flex-col space-y-3 py-6 px-3"
             >
-                <p class="font-bold text-lg text-white">Home</p>
-                <p class="font-bold text-lg text-white">Transactions</p>
-                <p class="font-bold text-lg text-[#d36332]">Earnings</p>
+                <router-link
+                    :to="{ name: 'home' }"
+                    class="font-bold text-lg"
+                    :class="{
+                        'text-[#d36332]': isActive('home'),
+                        'text-white': !isActive('home'),
+                    }"
+                >
+                    Home
+                </router-link>
+
+                <router-link
+                    :to="{ name: 'transactions' }"
+                    class="font-bold text-lg"
+                    :class="{
+                        'text-[#d36332]': isActive('transactions'),
+                        'text-white': !isActive('transactions'),
+                    }"
+                >
+                    Transactions
+                </router-link>
+
+                <router-link
+                    :to="{ name: 'earnings' }"
+                    class="font-bold text-lg"
+                    :class="{
+                        'text-[#d36332]': isActive('earnings'),
+                        'text-white': !isActive('earnings'),
+                    }"
+                >
+                    Earnings
+                </router-link>
+
+                <router-link
+                    :to="{ name: 'create' }"
+                    class="font-bold text-lg"
+                    :class="{
+                        'text-[#d36332]': isActive('create'),
+                        'text-white': !isActive('create'),
+                    }"
+                >
+                    Create
+                </router-link>
             </section>
             <section class="mt-auto absolute bottom-0 py-6 px-3">
                 <p class="rounded-lg flex border border-white space-x-3 p-2">
@@ -37,6 +77,7 @@
 </template>
 
 <script>
+import { useRouter } from "vue-router";
 export default {
     name: "SideBar",
     props: {
@@ -45,6 +86,16 @@ export default {
             required: true,
         },
     },
-    setup() {},
+    setup() {
+        const router = useRouter();
+
+        const isActive = (routeName) => {
+            return router.currentRoute.value.name === routeName;
+        };
+
+        return {
+            isActive,
+        };
+    },
 };
 </script>

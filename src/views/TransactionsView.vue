@@ -7,23 +7,18 @@
             =
         </button>
         <SideBar :isOpen="isOpen" @toggle-sidebar="toggleSidebar" />
-
-        <MainSection :isOpen="isOpen" />
     </div>
 </template>
-
 <script>
 import SideBar from "@/components/SideBar.vue";
-import MainSection from "@/components/MainSection.vue";
-
 import { computed } from "vue";
 import { onBeforeRouteLeave } from "vue-router";
 import { useStore } from "vuex";
 
 export default {
+    name: "TransactionsView",
     components: {
         SideBar,
-        MainSection,
     },
     setup() {
         const store = useStore();

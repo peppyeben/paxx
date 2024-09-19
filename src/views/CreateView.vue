@@ -1,5 +1,8 @@
 <template>
-    <div class="flex pt-16">
+    <div
+        style="background-image: url('assets/bg.svg')"
+        class="pt-16 p-8 fixed h-screen w-screen bg-cover bg-center bg-no-repeat overflow-y-auto overflow-x-hidden"
+    >
         <button
             @click="toggleSidebar"
             class="bg-[#543ec5] shadow-1 shadow-[#ab9aff] text-white fixed top-4 left-4 z-50 rounded-full w-14 h-14"
@@ -7,23 +10,23 @@
             =
         </button>
         <SideBar :isOpen="isOpen" @toggle-sidebar="toggleSidebar" />
-
-        <MainSection :isOpen="isOpen" />
+        <CreateForm :isOpen="isOpen"></CreateForm>
     </div>
 </template>
 
 <script>
+import CreateForm from "@/components/CreateForm.vue";
 import SideBar from "@/components/SideBar.vue";
-import MainSection from "@/components/MainSection.vue";
 
 import { computed } from "vue";
 import { onBeforeRouteLeave } from "vue-router";
 import { useStore } from "vuex";
 
 export default {
+    name: "CreateView",
     components: {
+        CreateForm,
         SideBar,
-        MainSection,
     },
     setup() {
         const store = useStore();

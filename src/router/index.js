@@ -7,9 +7,19 @@ const routes = [
         component: () => import("../views/EarningsView.vue"),
     },
     {
-        path: "/dashboard",
-        name: "dashboard",
+        path: "/transactions",
+        name: "transactions",
+        component: () => import("../views/TransactionsView.vue"),
+    },
+    {
+        path: "/earnings",
+        name: "earnings",
         component: () => import("../views/EarningsView.vue"),
+    },
+    {
+        path: "/create",
+        name: "create",
+        component: () => import("../views/CreateView.vue"),
     },
 ];
 
